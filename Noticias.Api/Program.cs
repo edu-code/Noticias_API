@@ -44,7 +44,7 @@ var autoMapperConfig = new MapperConfiguration(cfg =>
 builder.Services.AddSingleton(autoMapperConfig.CreateMapper());
 
 builder.Services.AddSingleton(d => builder.Configuration);
-builder.Services.AddDbContext<NoticiaContext>(options => options.UseMySql("Server=localhost;Port=3306;Database=Noticiasdb;Uid=root;Pwd=Lab@inf019;", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.30-mysql")));
+builder.Services.AddDbContext<NoticiaContext>(options => options.UseMySql("Server=localhost;port=3306;User Id=eduarda;database=NoticiasDB;Pwd=Lab@inf019;", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.30-mysql")));
 
 builder.Services.AddScoped<INoticiaRepository, NoticiaRepository>();
 builder.Services.AddScoped<INoticiaService, NoticiaService>();

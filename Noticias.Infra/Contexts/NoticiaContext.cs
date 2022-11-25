@@ -15,7 +15,7 @@ public class NoticiaContext : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            optionsBuilder.UseMySql("server=localhost;port=3306;User Id=root;database=Noticiasdb;Pwd=Lab@inf019;", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.30-mysql"));
+            optionsBuilder.UseMySql("server=localhost;port=3306;User Id=eduarda;database=NoticiasDB;Pwd=Lab@inf019;", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.30-mysql"));
         }
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
