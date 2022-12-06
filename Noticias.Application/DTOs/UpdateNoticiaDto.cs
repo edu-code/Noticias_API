@@ -13,7 +13,7 @@ public class UpdateNoticiaDto
     public string Titulo { get; set; } = null!;
     
     [Required(ErrorMessage = "O texto não pode ser vazio")]
-    [MaxLength(5000, ErrorMessage = "O texto deve ter no máximo 3000 caracteres")]
+    [MaxLength(5000, ErrorMessage = "O texto deve ter no máximo 5000 caracteres")]
     [MinLength(5, ErrorMessage = "O texto deve ter no mínimo 5 caracteres")]
     public string Texto { get; set; } = null!;
 }
