@@ -5,7 +5,7 @@ namespace Noticias.Application.DTOs;
 public class NoticiaDto
 {
     [Required(ErrorMessage = "O titulo não pode ser vazio")]
-    [MaxLength(80, ErrorMessage = "O titulo deve ter no máximo 80 caracteres")]
+    [MaxLength(120, ErrorMessage = "O titulo deve ter no máximo 120 caracteres")]
     [MinLength(5, ErrorMessage = "o titulo deve ter no mínimo 3 caracteres")]
     public string Titulo { get; set; } = null!;
     
